@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- controla a responsabilidade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site Responsivo</title>
+    <style>
+/* Mobile */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+         header { 
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content:space-around;
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 150px;
+
+        } 
+
+        #container{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: auto;
+        }
+
+        h1{
+            text-align: center;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 70%;
+            height: auto;
+           
+         
+        }
+        h2{
+            
+            color:#00f0ff;
+            /* border: 1px solid  white; */
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        h3{
+          
+            color:#00f0ff;
+            /* border: 1px solid  white; */
+            font-size: 16px;
+            font-weight: lighter;
+            padding-bottom: 30px;
+
+        }
+        h4{
+            padding-top: 20px;
+            color: white;
+            /* border: 1px solid  white; */
+            font-size: 16px;
+            font-weight: lighter;
+            
+        }
+
+        #logotipo{
+            display: flex;
+            border: 1px solid blue;
+            width: 200px;
+            height: 200px;
+
+            
+
+        }
+        main{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid green; */
+            background-color: black;
+            color: black;
+
+        }
+
+        #portifolio{
+            border: 1px solid black;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+
+        #conhecimentos{
+            color: black;
+            border: 1px solid black;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            background-color: white;
+
+        }
+        #trabalhos{
+            color: black;
+            border: 1px solid black;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            background-color: white;
+        }
+        #contato{
+            color: black;
+            border: 1px solid black;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            background-color: white;
+            
+        }
+        
+
+        section{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+           justify-content: center;
+            
+            /* border: 1px solid white; */
+            width: 100%;
+            height: auto;
+        }
+        #baner{
+          
+            /* border: 1px solid greenyellow; */
+            background-color: indigo;
+            width: 390px;
+            height: auto;
+            margin-top: 30px;
+          
+        }
+
+        #conteudovideos {
+           
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: auto;
+            /* border: 1px solid white; */
+            background-color:black;
+            color: black;
+
+        }
+        h4{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* border: 1px solid red; */
+            display:inline-block;
+            padding-top: 10px;
+            border-top: 1px solid white;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+        iframe{
+            display: inline-block;
+           
+            width: 100%;
+            height: 400px;
+
+        }
+        h5{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* border: 1px solid red; */
+            display:inline-block;
+            padding-top: 10px;
+            border-top: 1px solid white;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            color: white;
+            /* border: 1px solid  white; */
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        .desenho{
+            /* border: 1px solid white; */
+            margin-top: 20px;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            margin-top: 50px;
+            /* border: 1px solid white; */
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+       
+
+         #redesociais{
+             display: flex;
+             justify-content: center;
+             width: 100%;
+             height: auto;
+             /* border: 1px solid white; */
+             
+         }
+         h6{
+          
+          /* border: 1px solid red; */
+          display:inline-block;
+          padding-top: 10px;
+          /* border-top: 1px solid white; */
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          color: white;
+          padding-top: 20px;
+          color: white;
+          /* border: 1px solid  white; */
+          font-size: 16px;
+          font-weight: lighter;
+
+       }
+
+         #face{
+             /* border: 1px solid red; */
+             width: 20px;
+             height: 20px;
+             margin-right: 15px;
+            
+             
+             
+           
+
+         }
+
+         #inta{
+             /* border: 1px solid red; */
+             width: 20px;
+             height: 20px;
+             
+          }
+          h6{
+            /* border-top: 1px solid white; */
+              width: 100%;
+              height: 30px;
+              padding: 0;
+             
+
+          }
+          #h6{
+              
+              padding: 0;
+              width: 100%;
+              height: 30px;
+              
+          }
+          #ilustraDesenhos{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+               /* border: 1px solid green;  */
+               padding-top: 15px;
+              width: 80%;
+              height: auto;
+          }
+          .desenhoOne{ 
+            /* border: 1px solid white;  */
+            margin-top: 10px;
+            width: 200px; 
+            height:200px; 
+            } 
+        
+         
+         
+         
+
+
+/*mobile*/
+
+/* tablet */
+        @media screen and (min-width: 768px)
+
+            {
+            h1{font-size: 30px;
+            margin-top: 50px;
+            color: #00f0ff;
+            }
+
+            h2{
+            margin-top: 5px;
+            color: #00f0ff;
+            border: 1px solid  white;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+            h3{
+            color: #00f0ff;
+            border: 1px solid  white;
+            font-size: 16px;
+            font-weight: lighter;
+
+        }
+
+            p{
+                width: 100px;
+                height: 100px;
+                margin-top: 20px;
+                font-size: 20px;
+                background-color: #00f0ff;
+                color: white;
+            }
+            header { 
+               
+               display: flex;
+               flex-direction: column;
+               justify-content: flex-start;
+                padding: 0;
+                border: 1px solid red;
+                width: 100%;
+                height: 300px;
+
+            } 
+            #container{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               background-color: black;
+               width: 100%;
+               height: auto;
+        }
+        main{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction:row;
+            align-items: flex-start;
+            justify-content:space-around;
+            border: 1px solid green;
+            background-color: black;
+            color: black;
+
+        }
+        #portifolio{
+            margin-top: 0;
+            border: 1px solid red;
+            width: 100px;
+            height: auto;
+            
+        }
+
+        #conhecimentos{
+            
+            margin-top: 0px;
+            border: 1px solid red;
+            width: 100px;
+            height: auto;
+
+        }
+        #contato{
+            text-decoration: none;
+            margin-top: 0;
+            border: 1px solid red;
+            width: 100px;
+            height: auto;
+            
+        }
+        #ilustraDesenhos{
+            border: 1px solid red
+        }
+        
+      
+
+        }
+
+
+
+
+
+
+
+/* desktop */
+        @media screen and (min-width: 992px){
+            #container{
+                max-width: 100%;
+                margin: auto;
+                border: 1px solid black;
+            }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div id="container">
+
+    <header>
+        <h1>Lucas Almeida Vieira</h1>
+        <h2>Desenvolvedor Front End</h2>
+        <h3>Web Designer (UX UI)</h3>
+
+    </header>
+
+    <main>
+        <p id="portifolio">Formações</p>
+        <p id="conhecimentos">Conhecimentos de Informática</p>
+        <p id="trabalhos">Trabalhos</p>
+        <p id="contato">Contatos</p>
+
+        <a href=""><img src="baneer-1.png" alt="jogo" id="baner"></a>
+        
+    </main>
+
+    <section>
+
+
+    <div id="conteudovideos">
+        <a href="url"><H4>Videos</H4> </a>
+
+       <iframe width="560" height="315" 
+       src="https://www.youtube.com/embed/dZ59FA0EZEQ" 
+       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+       allowfullscreen>
+       </iframe>
+
+       <a href="url"><h5>Destaques</h5> </a>
+       <a href="url" class="desenho"><img src="brasil_2.png" alt="desenho 1" width="100%" height="auto"></a>
+       <a href="url" class="desenho"><img src="lustreClassico.jpg" alt="desenho 2" width="100%" height="auto"></a>
+       <a href="url" class="desenho"><img src="lustreComtenporaneo.jpg" alt="desenho 3" width="100%" height="auto"></a>
+
+
+    </div>
+    </section>
+
+    <sextion id="ilustraDesenhos">
+        <a href="url" id="h6"><H6>Ilustrações</H6> </a>
+        <div class="desenhoOne">
+            <a href="url" class="desenho"><img src="Cleopatra.png" alt="desenho 1" width="100%" height="auto"></a>
+        </div>
+
+        <div class="desenhoOne">
+            <a href="url" class="desenho"><img src="PixelArtLukeets.png" alt="desenho 1" width="100%" height="auto"></a>
+        </div>
+
+        <div class="desenhoOne">
+            <a href="url" class="desenho"><img src="ObitoKakashi.png" alt="desenho 1" width="100%" height="auto"></a>
+        </div>
+
+        <div class="desenhoOne">
+            <a href="url" class="desenho"><img src="Logotipo.png" alt="desenho 1" width="100%" height="auto"></a>
+        </div>
+
+    </sextion>
+
+    <footer>
+        
+        <h6>REDES SOCIAS</h6>
+
+        <div id="redesociais">
+        
+            <div id="face">
+        <i class="fab fa-facebook">
+           <a href="https://www.facebook.com/lucaas.almeida.10" target="_blank"> <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg></a>
+        </i>
+             </div>
+
+
+            <div id="inta" target="_blank">
+        <i class="fab fa-instagram" >
+           <a href="https://www.instagram.com/lucaswebdeveloper/?hl=pt-br" target="_blank"> <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a> 
+        </i>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+   </div>
+   
+    
+
+</body>
+</html>
